@@ -1,0 +1,105 @@
+@charset "utf-8";
+
+
+/*======================================
+  基本設定
+======================================*/
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+
+div#container1{
+	width: 0 auto;
+	height: 0 auto;
+}
+
+div#container2{
+	width: 0 auto;
+	height: 0 auto;
+}
+
+body{
+	background-color: #f5f5f5;
+	font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, "sans-serif";
+	color: #222344;	
+}
+
+/*======================================
+  ヘッダー
+======================================*/
+header.page1{
+	margin-bottom: 50px;
+	width: 100%;
+	height: 300px;
+	background-color: #fff;
+	border-bottom: 5px solid #D100B0;
+	box-shadow: 0px 1px 3px rgba(0,0,0,0.2)	
+}
+
+header.page2{
+	margin-bottom: 50px;
+	width: 100%;
+	height: 370px;
+	background-color: #fff;
+	border-bottom: 5px solid #005CFF;
+	box-shadow: 0px 1px 3px rgba(0,0,0,0.2)	
+}
+
+/*======================================
+  コンテンツ
+======================================*/
+article h2{
+	margin-top: 50px;
+}
+
+article p{
+	font-size: 120%;
+}
+
+div#container1 article dl dt{
+	border-top: 1px solid #D100B0;
+	overflow: auto;
+	padding-top: 20px
+}
+
+div#container2 article dl dt{
+	border-top: 1px solid #005CFF;
+	overflow: auto;
+	padding-top: 20px
+}
+
+nav ul li:hover{
+	color: #FF0004;
+	text-decoration: underline 3px solid #FF0004;
+}
+
+dl dt{
+	font-weight: bold;
+}
+
+/*======================================
+  フッター
+======================================*/
+footer.page1{
+	width: 100%;
+	height: 270px;
+	background-color: #FFB3F3;
+	margin-top: 50px;
+}
+
+footer.page2{
+	background-color: #00DBFF;
+	margin-top: 50px;
+}
+
+nav ul li span{
+	font-weight: bold;
+	font-size: 120%;
+}
+
+
+
+

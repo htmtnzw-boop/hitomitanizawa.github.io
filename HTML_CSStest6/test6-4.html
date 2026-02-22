@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<title>実技課題13 Swiperを利用した無限ループスライダー</title>
+<meta name="description" content="実技課題13 - Swiperを利用した無限ループスライダー">
+<meta name="author" content="IT Bunkyo">
+<link rel="stylesheet" media="all" href="css/test6-4.css">
+<link rel="stylesheet" href="css/swiper-bundle.min.css"></head>
+
+<body>
+	<p>このページの罫線以下にSwiperを利用した無限ループスライダーを実装しましょう。</p>
+	<p>画像サンプル</p>
+	<img class="imagesample" src="images/sample/infinite_loopslider.gif" alt="無限スクロールスライダーサンプル画像">
+	<p>編集対象CSSファイル：css/test6-4.css</p>
+	<p>使用画像フォルダ：images/（4種類、大小2枚の合計8枚を自由に使用可）</p>
+	<p>外部プログラム保存フォルダ：js/</p>
+	<p>検索キーワード：Swiper　無限　スライダー</p>
+	<hr>
+	<!--ここから課題-->
+	
+	<div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="images/flower_01.jpg"></div>
+      <div class="swiper-slide"><img src="images/palmtree_01.jpg"></div>
+      <div class="swiper-slide"><img src="images/restaurant_01.jpg"></div>
+      <div class="swiper-slide"><img src="images/signpost_01.jpg"></div>
+    </div>
+  </div>
+	
+    <script src="js/swiper-bundle.min.js"></script>
+  <script>
+  const swiper = new Swiper('.swiper-container', {
+    loop: true,
+    speed: 10000,
+    autoplay: {
+      delay: 0,
+    },
+    spaceBetween: 10,
+    slidesPerView: 2.8, // PC用（初期値）
+
+    // 👇 ブレイクポイント設定でスマホ対応！
+    breakpoints: {
+      // 768px以下（スマホサイズ）のとき
+      768: {
+        slidesPerView: 1.2, // スマホでは1〜2枚だけ表示
+        spaceBetween: 5     // 間隔も狭めに
+      }
+    }
+  });
+</script>
+	
+</body>
+</html>

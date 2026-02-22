@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<title>実技課題13 スクロールに応じて要素をフェードインさせる</title>
+<meta name="description" content="実技課題13 - スクロールに応じて要素をフェードインさせる">
+<meta name="author" content="IT Bunkyo">
+<link rel="stylesheet" media="all" href="css/test6-5.css">
+</head>
+
+<body>
+	<p>このページの罫線以下にCSSとJavaScript（jQuery等）を利用し、スクロールに応じて要素をフェードインさせるアニメーションを実装しましょう。</p>
+	<p>画像サンプル</p>
+	<img class="imagesample" src="images/sample/scroll_alternating_slide_animation.gif" alt="スクロールに応じたフェードインサンプル画像">
+	<p>編集対象CSSファイル：css/test6-5.css</p>
+	<p>使用素材：imagesの画像やボックス、テキストなど、動かす対象は自由です。</p>
+	<p>外部プログラム保存フォルダ：js/</p>
+	<p>検索キーワード：スクロール  フェードイン JavaScript</p>
+	<hr>
+	<!--ここから課題-->
+	
+	<div class="fadein left"><img src="images/flower_01.jpg" alt="flower"></div>
+	<div class="fadein right"><img src="images/palmtree_01.jpg" alt="palmtree"></div>
+	<div class="fadein left"><img src="images/restaurant_01.jpg" alt="restaurant"></div>
+	<div class="fadein right"><img src="images/signpost_01.jpg" alt="signpost"></div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const targets = document.querySelectorAll('.fadein');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    targets.forEach(target => {
+      observer.observe(target);
+    });
+  });
+</script>
+
+</body>
+</html>

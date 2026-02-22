@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="ja">
+	
+<head>
+	<meta name="robots" content="noindex, nofollow"><!-- 検索エンジン回避のための記述 -->
+	<meta charset="utf-8">
+	<title>主要HTMLタグチートシート</title>
+	<meta name="description" content="主要HTMLタグチートシート - コンテンツカテゴリー">
+	<meta name="author" content="IT Bunkyo">
+	<link rel="stylesheet" media="all" href="style.css">
+</head>
+
+<body>
+	<div id="container1">
+		<!-- ここからヘッダー -->
+		<header class="page1">
+			
+			<h1>主要HTMLタグチートシート</h1>
+			<nav>
+				<ul>
+					<li><a href="test5_2.html">CSSチートシート</a></li>
+					<li><a href="#html_001">メタデータコンテンツ（Metadata content）</a></li>
+					<li><a href="#html_002">フローコンテンツ（Flow content）</a></li>
+					<li><a href="#html_003">区分コンテンツ（Sectioning content）</a></li>
+					<li><a href="#html_004">見出しコンテンツ（Heading Content）</a></li>
+					<li><a href="#html_005">記述コンテンツ（Phrasing Content）</a></li>
+					<li><a href="#html_006">埋め込みコンテンツ（Embedded Content）</a></li>
+					<li><a href="#html_007">対話型コンテンツ（Interactive Content）</a></li>
+					<li><a href="#html_008">知覚可能コンテンツ（Palpable Content）</a></li>
+					<li><a href="#html_009">フォーム関連コンテンツ（Form associated Content）</a></li>
+				</ul>
+			</nav>
+		</header>
+		<!-- ここまでヘッダー -->
+		
+		<!-- ここからコンテンツ -->
+		<article>
+			<h2 id="html_001">メタデータコンテンツ（Metadata content）</h2>
+			<p>ページの情報や外部リソースを設定するために使用され、特にSEOやページ動作に重要となるタグ群です。</p>
+			<dl>
+				<dt>!doctype</dt>
+				<dd>HTMLのバージョンを指定・宣言する（HTML5では !doctype html）</dd>
+				<dt>html</dt>
+				<dd>HTMLドキュメントのルート要素</dd>
+				<dt>head</dt>
+				<dd>メタデータ（タイトル・スタイル・スクリプトなど）を含む要素</dd>
+				<dt>title</dt>
+				<dd>ウェブページのタイトル（ブラウザのタブに表示される）</dd>
+				<dt>meta</dt>
+				<dd>ページのメタデータ（文字エンコード・詳細説明・ビュー設定など）を指定</dd>
+				<dt>link</dt>
+				<dd>外部のリソース（CSSファイル・アイコンなど）を関連付ける</dd>
+				<dt>style</dt>
+				<dd>内部CSSを定義</dd>
+				<dt>script</dt>
+				<dd>JavaScriptコードを埋め込む</dd>
+				<dt>base</dt>
+				<dd>ドキュメント内の相対URLの基準を設定</dd>
+			</dl>
+		</article>
+		
+		<article>
+			<h2 id="html_002">フローコンテンツ（Flow content）</h2>
+			<p>文書の主要な構造を構成するタグ群で、ブロック要素やインライン要素を含む幅広い要素が該当します。</p>
+			<dl>
+				<dt>a</dt>
+				<dd>ハイパーリンクを作成</dd>
+				<dt>abbr</dt>
+				<dd>略語や頭字語を定義</dd>
+				<dt>address</dt>
+				<dd>連絡先情報（サイト管理者・組織の連絡先）を示す</dd>
+				<dt>article</dt>
+				<dd>独立したコンテンツ（ニュース記事・ブログ投稿など）を表す</dd>
+				<dt>aside</dt>
+				<dd>補足情報（サイドバー・広告など）を示す</dd>
+				<dt>audio</dt>
+				<dd>音声コンテンツを埋め込む</dd>
+				<dt>b</dt>
+				<dd>テキストを視覚的に太字にする（意味的な強調はしない）重要な意味を持つ場合はstrongを使用</dd>
+				<dt>blockquote</dt>
+				<dd>引用文を表す</dd>
+				<dt>cite</dt>
+				<dd>作品のタイトルを表す</dd>
+				<dt>details</dt>
+				<dd>折りたたみ可能な詳細情報を作成</dd>
+				<dt>div</dt>
+				<dd>汎用的なコンテナ要素（スタイルやレイアウトに使用）</dd>
+				<dt>dl</dt>
+				<dd>説明リストを作成</dd>
+				<dt>em</dt>
+				<dd>テキストを強調（通常・斜体表示）</dd>
+				<dt>fieldset</dt>
+				<dd>フォーム内の関連要素をグループ化</dd>
+				<dt>figure</dt>
+				<dd>図やイラストを含むコンテナ</dd>
+				<dt>footer</dt>
+				<dd>フッターセクション（著作権情報など）</dd>
+				<dt>form</dt>
+				<dd>ユーザー入力を受け付けるフォームを作成</dd>
+				<dt>header</dt>
+				<dd>ヘッダーセクション（ナビゲーションやロゴなど）</dd>
+				<dt>hr</dt>
+				<dd>区切り線を表示</dd>
+				<dt>img</dt>
+				<dd>画像を埋め込む</dd>
+				<dt>input</dt>
+				<dd>フォームの入力フィールドを作成</dd>
+				<dt>label</dt>
+				<dd>フォームのラベルを定義</dd>
+				<dt>main</dt>
+				<dd>ページの主要コンテンツを示す</dd>
+				<dt>nav</dt>
+				<dd>ナビゲーションリンクのセットを示す</dd>
+				<dt>object</dt>
+				<dd>埋め込みオブジェクト（外部リソース）を表示</dd>
+				<dt>ol</dt>
+				<dd>順序付きリストを作成</dd>
+				<dt>p</dt>
+				<dd>段落を作成</dd>
+				<dt>pre</dt>
+				<dd>整形済みテキストを表示（改行やスペースを保持）</dd>
+				<dt>q</dt>
+				<dd>短い引用を表す</dd>
+				<dt>section</dt>
+				<dd>文書のセクションを示す</dd>
+				<dt>select</dt>
+				<dd>ドロップダウンリストを作成</dd>
+				<dt>span</dt>
+				<dd>インライン要素のグループ化（スタイル適用に使用）</dd>
+				<dt>strong</dt>
+				<dd>強調（意味的に重要・通常は太字）</dd>
+				<dt>sub</dt>
+				<dd>下付き文字を表示</dd>
+				<dt>sup</dt>
+				<dd>上付き文字を表示</dd>
+				<dt>table</dt>
+				<dd>表を作成</dd>
+				<dt>textarea</dt>
+				<dd>複数行のテキスト入力フィールドを作成</dd>
+				<dt>time</dt>
+				<dd>時間や日付を表す</dd>
+				<dt>ul</dt>
+				<dd>順序なしリストを作成</dd>
+				<dt>video</dt>
+				<dd>動画を埋め込む</dd>
+			</dl>
+		</article>
+		
+		<article>
+			<h2 id="html_003">区分コンテンツ（Sectioning content）</h2>
+			<p>ページ構造を整理するための要素で、HTMLの意味論的（意味のあるタグ）なマークアップにおいて重要です。divはコンテナを作るだけなので含まれません。</p>
+			<dl>
+				<dt>article</dt>
+				<dd>独立したコンテンツ（ニュース記事・ブログ投稿など）を表す</dd>
+				<dt>aside</dt>
+				<dd>補足情報（サイドバー・広告など）を示す</dd>
+				<dt>nav</dt>
+				<dd>ナビゲーションリンクのセットを示す</dd>
+				<dt>section</dt>
+				<dd>文書のセクションを示す</dd>
+				<dt>header</dt>
+				<dd>ヘッダーセクション（ナビゲーションやロゴなど）</dd>
+				<dt>footer</dt>
+				<dd>フッターセクション（著作権情報など）</dd>
+				<dt>main</dt>
+				<dd>ページの主要コンテンツを示す（1ページに1つ推奨）</dd>
+				<dt>address</dt>
+				<dd>連絡先情報（サイト管理者・組織の連絡先）を示す</dd>
+			</dl>
+		</article>
+		
+		<article>
+			<h2 id="html_004">見出しコンテンツ（Heading Content）</h2>
+			<p>ページの構造を整理しSEO対策にも影響するため、適切に使用することが重要です。</p>
+			<dl>
+				<dt>h1</dt>
+				<dd>最も重要な見出し（ページタイトルなどに使用）</dd>
+				<dt>h2</dt>
+				<dd>2番目に重要な見出し（コンテンツのタイトルなどに使用）</dd>
+				<dt>h3</dt>
+				<dd>3番目に重要な見出し（小見出しとして使用）</dd>
+				<dt>h4</dt>
+				<dd>4番目に重要な見出し（さらに細かい見出し）</dd>
+				<dt>h5</dt>
+				<dd>5番目に重要な見出し（h4よりも小さい見出し）</dd>
+				<dt>h6</dt>
+				<dd>6番目に重要な見出し（最も小さい見出し）</dd>
+			</dl>
+		</article>
+		
+		<article>
+			<h2 id="heml_005">記述コンテンツ（Phrasing Content）</h2>
+			<p>テキストやインライン要素を扱うためのタグであり、主に文章の構成や装飾、フォーム入力のために使用されます。</p>
+			<dl>
+				<dt>a</dt>
+				<dd>ハイパーリンクを作成</dd>
+				<dt>abbr</dt>
+				<dd>略語や頭字語を定義</dd>
+				<dt>area</dt>
+				<dd>画像マップ内のクリック可能領域を定義</dd>
+				<dt>audio</dt>
+				<dd>音声コンテンツを埋め込む</dd>
+				<dt>b</dt>
+				<dd>テキストを視覚的に太字にする（意味的な強調はしない）重要な意味を持つ場合はstrongを使用</dd>
+				<dt>br</dt>
+				<dd>改行を挿入</dd>
+				<dt>button</dt>
+				<dd>クリック可能なボタンを作成</dd>
+				<dt>canvas</dt>
+				<dd>描画領域を提供（JavaScriptと組み合わせて使用）</dd>
+				<dt>cite</dt>
+				<dd>作品のタイトルを表す</dd>
+				<dt>em</dt>
+				<dd>テキストを強調（通常・斜体表示）</dd>
+				<dt>embed</dt>
+				<dd>外部コンテンツを埋め込む（動画・音声など）</dd>
+				<dt>i</dt>
+				<dd>テキストを斜体にする（意味的な強調なし）</dd>
+				<dt>iframe</dt>
+				<dd>別のウェブページを埋め込む</dd>
+				<dt>img</dt>
+				<dd>画像を埋め込む</dd>
+				<dt>input</dt>
+				<dd>フォームの入力フィールドを作成</dd>
+				<dt>label</dt>
+				<dd>フォームのラベルを定義</dd>
+				<dt>q</dt>
+				<dd>短い引用を表す</dd>
+				<dt>ruby</dt>
+				<dd>ルビ（ふりがな）を表示</dd>
+				<dt>rt</dt>
+				<dd>ルビのテキストを定義</dd>
+				<dt>s</dt>
+				<dd>取り消し線を表示</dd>
+				<dt>script</dt>
+				<dd>JavaScriptコードを埋め込む</dd>
+				<dt>select</dt>
+				<dd>ドロップダウンリストを作成</dd>
+				<dt>small</dt>
+				<dd>小さいテキストを表示</dd>
+				<dt>span</dt>
+				<dd>インライン要素のグループ化（スタイル適用に使用）</dd>
+				<dt>strong</dt>
+				<dd>強調（意味的に重要・通常は太字）</dd>
+				<dt>sub</dt>
+				<dd>下付き文字を表示</dd>
+				<dt>sup</dt>
+				<dd>上付き文字を表示</dd>
+				<dt>textarea</dt>
+				<dd>複数行のテキスト入力フィールドを作成</dd>
+				<dt>time</dt>
+				<dd>時間や日付を表す</dd>
+				<dt>video</dt>
+				<dd>動画を埋め込む</dd>
+			</dl>
+		</article>
+		
+		<article>
+			<h2 id="html_006">埋め込みコンテンツ（Embedded Content）</h2>
+			<p>外部メディア等をページ内に埋め込むための要素で動画・音声・画像・外部ページの表示に使用されます。</p>
+			<dl>
+				<dt>audio</dt>
+				<dd>音声コンテンツを埋め込む</dd>
+				<dt>canvas</dt>
+				<dd>描画領域を提供（JavaScriptと組み合わせて使用）</dd>
+				<dt>embed</dt>
+				<dd>外部コンテンツを埋め込む（プラグインコンテンツなど）</dd>
+				<dt>iframe</dt>
+				<dd>別のウェブページを埋め込む</dd>
+				<dt>img</dt>
+				<dd>画像を埋め込む</dd>
+				<dt>object</dt>
+				<dd>埋め込みオブジェクト（外部リソース）を表示</dd>
+				<dt>source</dt>
+				<dd>音声・動画の複数のソースを指定</dd>
+				<dt>svg</dt>
+				<dd>SVG（ベクター画像）を描画</dd>
+				<dt>track</dt>
+				<dd>音声・動画の字幕やキャプションを指定</dd>
+				<dt>video</dt>
+				<dd>動画を埋め込む</dd>
+			</dl>
+		</article>
+		
+		<article>
+			<h2 id="html_007">対話型コンテンツ（Interactive Content）</h2>
+			<p>ユーザーが操作できる要素を提供するためのタグ群です。フォーム、ボタン、ナビゲーションなどが含まれます。</p>
+			<dl>
+				<dt>a</dt>
+				<dd>ハイパーリンクを作成</dd>
+				<dt>button</dt>
+				<dd>クリック可能なボタンを作成</dd>
+				<dt>details</dt>
+				<dd>折りたたみ可能な詳細情報を作成</dd>
+				<dt>embed</dt>
+				<dd>外部コンテンツを埋め込む（プラグインコンテンツなど）</dd>
+				<dt>iframe</dt>
+				<dd>別のウェブページを埋め込む</dd>
+				<dt>input</dt>
+				<dd>フォームの入力フィールドを作成</dd>
+				<dt>label</dt>
+				<dd>フォームのラベルを定義</dd>
+				<dt>select</dt>
+				<dd>ドロップダウンリストを作成</dd>
+				<dt>textarea</dt>
+				<dd>複数行のテキスト入力フィールドを作成</dd>
+			</dl>
+		</article>
+		
+		<article>
+			<h2 id="html_008">知覚可能コンテンツ（Palpable Content）</h2>
+			<p>ユーザーが視覚的に認識できる要素を指します。ページ内に何かしらの内容を表示する要素で、空のdivやspanなどは知覚可能コンテンツに含まれません。</p>
+			<dl>
+				<dt>a</dt>
+				<dd>ハイパーリンクを作成</dd>
+				<dt>abbr</dt>
+				<dd>略語や頭字語を定義</dd>
+				<dt>address</dt>
+				<dd>連絡先情報（サイト管理者・組織の連絡先）を示す</dd>
+				<dt>article</dt>
+				<dd>独立したコンテンツ（ニュース記事・ブログ投稿など）を表す</dd>
+				<dt>aside</dt>
+				<dd>補足情報（サイドバー・広告など）を示す</dd>
+				<dt>audio</dt>
+				<dd>音声コンテンツを埋め込む</dd>
+				<dt>b</dt>
+				<dd>テキストを視覚的に太字にする（意味的な強調はしない）重要な意味を持つ場合はstrongを使用</dd>
+				<dt>blockquote</dt>
+				<dd>引用文を表す</dd>
+				<dt>button</dt>
+				<dd>クリック可能なボタンを作成</dd>
+				<dt>canvas</dt>
+				<dd>描画領域を提供（JavaScriptと組み合わせて使用）</dd>
+				<dt>cite</dt>
+				<dd>作品のタイトルを表す</dd>
+				<dt>details</dt>
+				<dd>折りたたみ可能な詳細情報を作成</dd>
+				<dt>dfn</dt>
+				<dd>用語の定義を示す</dd>
+				<dt>div</dt>
+				<dd>汎用的なコンテナ要素（スタイルやレイアウトに使用）</dd>
+				<dt>dl</dt>
+				<dd>説明リストを作成</dd>
+				<dt>em</dt>
+				<dd>テキストを強調（通常・斜体表示）</dd>
+				<dt>fieldset</dt>
+				<dd>フォーム内の関連要素をグループ化</dd>
+				<dt>figure</dt>
+				<dd>図やイラストを含むコンテナ</dd>
+				<dt>footer</dt>
+				<dd>フッターセクション（著作権情報など）</dd>
+				<dt>form</dt>
+				<dd>ユーザー入力を受け付けるフォームを作成</dd>
+				<dt>header</dt>
+				<dd>ヘッダーセクション（ナビゲーションやロゴなど）</dd>
+				<dt>hr</dt>
+				<dd>区切り線を表示</dd>
+				<dt>i</dt>
+				<dd>テキストを斜体にする（意味的な強調なし）</dd>
+				<dt>img</dt>
+				<dd>画像を埋め込む</dd>
+				<dt>input</dt>
+				<dd>フォームの入力フィールドを作成</dd>
+				<dt>label</dt>
+				<dd>フォームのラベルを定義</dd>
+				<dt>main</dt>
+				<dd>ページの主要コンテンツを示す</dd>
+				<dt>mark</dt>
+				<dd>ハイライトされたテキストを表す</dd>
+				<dt>meter</dt>
+				<dd>数値の測定値を示す（進捗バーなど）</dd>
+				<dt>nav</dt>
+				<dd>ナビゲーションリンクのセットを示す</dd>
+				<dt>object</dt>
+				<dd>埋め込みオブジェクト（外部リソース）を表示</dd>
+				<dt>ol</dt>
+				<dd>順序付きリストを作成</dd>
+				<dt>p</dt>
+				<dd>段落を作成</dd>
+				<dt>pre</dt>
+				<dd>整形済みテキストを表示（改行やスペースを保持）</dd>
+				<dt>progress</dt>
+				<dd>進行状況バーを表示</dd>
+				<dt>q</dt>
+				<dd>短い引用を表す</dd>
+				<dt>s</dt>
+				<dd>取り消し線を表示</dd>
+				<dt>section</dt>
+				<dd>文書のセクションを示す</dd>
+				<dt>select</dt>
+				<dd>ドロップダウンリストを作成</dd>
+				<dt>small</dt>
+				<dd>小さいテキストを表示</dd>
+				<dt>span</dt>
+				<dd>インライン要素のグループ化（スタイル適用に使用）</dd>
+				<dt>strong</dt>
+				<dd>強調（意味的に重要・通常は太字）</dd>
+				<dt>sub</dt>
+				<dd>下付き文字を表示</dd>
+				<dt>sup</dt>
+				<dd>上付き文字を表示</dd>
+				<dt>table</dt>
+				<dd>表を作成</dd>
+				<dt>textarea</dt>
+				<dd>複数行のテキスト入力フィールドを作成</dd>
+				<dt>time</dt>
+				<dd>時間や日付を表す</dd>
+				<dt>u</dt>
+				<dd>下線を表示（意味的な強調なし）</dd>
+				<dt>ul</dt>
+				<dd>順序なしリストを作成</dd>
+				<dt>video</dt>
+				<dd>動画を埋め込む</dd>
+			</dl>
+		</article>
+		
+		<article>
+			<h2 id="html_009">フォーム関連コンテンツ（Form associated Content）</h2>
+			<p>ユーザー入力を受け付ける要素として、フォームや入力フィールド、選択リスト、ボタンなどが含まれます。</p>
+			<dl>
+				<dt>button</dt>
+				<dd>クリック可能なボタンを作成</dd>
+				<dt>datalist</dt>
+				<dd>入力候補のリストを作成</dd>
+				<dt>fieldset</dt>
+				<dd>フォーム内の関連要素をグループ化</dd>
+				<dt>form</dt>
+				<dd>ユーザー入力を受け付けるフォームを作成</dd>
+				<dt>input</dt>
+				<dd>フォームの入力フィールドを作成</dd>
+				<dt>label</dt>
+				<dd>フォームのラベルを定義</dd>
+				<dt>legend</dt>
+				<dd>fieldset内のタイトルを定義</dd>
+				<dt>optgroup</dt>
+				<dd>select内でオプションをグループ化</dd>
+				<dt>option</dt>
+				<dd>selectやdatalistの選択肢を定義</dd>
+				<dt>select</dt>
+				<dd>ドロップダウンリストを作成</dd>
+				<dt>textarea</dt>
+				<dd>複数行のテキスト入力フィールドを作成</dd>
+			</dl>
+		</article>
+		<!-- ここまでコンテンツ -->
+		
+		<!-- ここからフッター -->
+		<footer class="page1">
+			<nav>
+				<ul>
+					<li><span><a href="#">トップへ戻る</a></span></li>
+					<li><a href="#html_001">メタデータコンテンツ（Metadata content）</a></li>
+					<li><a href="#html_002">フローコンテンツ（Flow content）</a></li>
+					<li><a href="#html_003">区分コンテンツ（Sectioning content）</a></li>
+					<li><a href="#html_004">見出しコンテンツ（Heading Content）</a></li>
+					<li><a href="#html_005">記述コンテンツ（Phrasing Content）</a></li>
+					<li><a href="#html_006">埋め込みコンテンツ（Embedded Content）</a></li>
+					<li><a href="#html_007">対話型コンテンツ（Interactive Content）</a></li>
+					<li><a href="#html_008">知覚可能コンテンツ（Palpable Content）</a></li>
+					<li><a href="#html_009">フォーム関連コンテンツ（Form associated Content）</a></li>
+				</ul>
+			</nav>
+			<p>&copy; IT Bunkyo</p>
+		</footer>
+		<!-- ここまでフッター -->
+	</div>
+</body>
+</html>

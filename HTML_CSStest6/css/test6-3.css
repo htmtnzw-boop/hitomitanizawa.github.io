@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*ここからサンプル画像用CSS*/
+.imagesample{
+	width: 700px;
+	height: 350px;
+	object-fit: cover;
+}
+/*ここまでサンプル画像用CSS*/
+    body {
+  	  text-align: center;
+    }
+
+    .slider {
+      width: 80%;
+      margin: 50px auto;
+    }
+
+    .slider img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+
+
+

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<title>実技課題13 CSSのドロップダウンメニュー</title>
+<meta name="description" content="実技課題13 - CSSのドロップダウンメニュー">
+<meta name="author" content="IT Bunkyo">
+<link rel="stylesheet" media="all" href="css/test6-1.css">
+</head>
+
+<body>
+	<p>このページの罫線以下にCSSのみでドロップダウンメニューを実装しましょう。<br>
+		色や動作方式等、メニュー項目以外は任意とします。</p>
+	<p>画像サンプル</p>
+	<img class="imagesample" src="images/sample/dropdownmenu.gif" alt="ドロップダウンメニューサンプル">
+	<p>編集対象CSSファイル：css/test6-1.css</p>
+	<p>検索キーワード：CSS　ドロップダウンメニュー</p>
+	<p>メニュー項目：（）内はドロップさせる内容</p>
+	<pre>
+	HOME　　商品一覧　　　お知らせ　　店舗情報　お問い合わせ
+		（商品ジャンルA）　　　　　（本店）
+		（商品ジャンルB）　　　　　（支店A）
+		　　　　　　　　　　　　　 （支店B）
+	</pre>
+	<hr>
+	<!--ここから課題-->
+	<ul id="drop-down-menu">
+	<li><a href="#">HOME</a></li>
+
+  	<li><a href="#">商品一覧</a>
+		<div class="dropdown-content">
+		<ul>
+			<li><a href="#">商品ジャンルA</a></li>
+			<li><a href="#">商品ジャンルB</a></li>
+		</ul>
+		</div>
+ 	</li>
+	
+	<li><a href="#">お知らせ</a></li>
+	
+	<li><a href="#">店舗情報</a>
+		<div class="dropdown-content">
+		<ul>
+			<li><a href="#">本店</a></li>
+			<li><a href="#">支店A</a></li>
+			<li><a href="#">支店B</a></li>
+		</ul>
+		</div>
+	</li>
+		
+	<li><a href="#">お問い合わせ</a></li>
+</ul>
+
+	
+</body>
+</html>

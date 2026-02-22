@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<title>実技課題13 slickを利用したカルーセル</title>
+<meta name="description" content="実技課題13 - slickを利用したカルーセル">
+<meta name="author" content="IT Bunkyo">
+<link rel="stylesheet" media="all" href="css/test6-3.css">
+<link rel="stylesheet" href="css/slick.css">
+<link rel="stylesheet" href="css/slick-theme.css">
+</head>
+
+<body>
+	<p>このページの罫線以下にslickを利用したカルーセルスライダー（カルーセルバナー）を実装しましょう。</p>
+	<p>画像サンプル</p>
+	<img class="imagesample" src="images/sample/slick_carousel.gif" alt="カルーセルサンプル画像">
+	<p>編集対象CSSファイル：css/test6-3.css</p>
+	<p>使用画像：images/flower_01.jpg、palmtree_01.jpg、restaurant_01.jpg、signpost_01.jpg（4種類）</p>
+	<p>外部プログラム保存フォルダ：js/</p>
+	<p>検索キーワード：slick カルーセル</p>
+	<hr>
+	<!--ここから課題-->
+
+  <div class="slider">
+    <div><img src="images/flower_01.jpg" alt="flower"></div>
+    <div><img src="images/palmtree_01.jpg" alt="palm tree"></div>
+    <div><img src="images/restaurant_01.jpg" alt="restaurant"></div>
+    <div><img src="images/signpost_01.jpg" alt="signpost"></div>
+  </div>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.slider').slick({
+        autoplay: true,         // 自動再生
+        autoplaySpeed: 3000,    // 3秒ごとに切り替え
+        dots: true,             // ドット表示
+        arrows: true,           // 次・前ボタン
+        infinite: true,         // ループ
+        speed: 500,             // 切り替え速度
+        slidesToShow: 1,        // 一度に表示する枚数
+        slidesToScroll: 1       // 一度にスクロールする枚数
+      });
+    });
+  </script>
+
+</body>
+</html>
