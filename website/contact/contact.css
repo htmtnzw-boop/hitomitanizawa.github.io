@@ -1,0 +1,514 @@
+@charset "utf-8";
+
+/*====================================
+  全体設計
+====================================*/
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+
+body{
+	background-color: #fff;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
+	color: #2b2b2b;
+	cursor: url("../images/nikukyuu_32x32.png") 16 16, auto !important;
+}
+
+div#wrapper{
+	width: 100%;
+	margin: 0 auto;
+}
+/*====================================
+  ヘッダー
+====================================*/
+header{
+	width: 100%;
+	height: 200px;
+}
+
+div#header_inner{
+	width: 1400px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+h1{
+	height: 47px;
+}
+
+div#contact{
+	width: 70px;
+	height: 70px;
+}
+
+div#nav{
+	width: 100%;
+	background-color: #552b0b;	
+}
+
+nav ul{
+	width: 1400px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+}
+
+nav ul li{
+	width: 200px;
+}
+
+nav ul li a{
+	width: 200px;
+	height: 40px;
+	padding-top: 10px;
+	background-color: #552b0b;
+	border-left: 2px solid #fff;
+	display: block;
+	color: #fff;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 1;
+}
+
+nav ul li a span{
+	font-size: 14px;
+	font-weight: normal;
+}
+
+nav ul li a:last-child{
+	border-right: 2px solid #fff;
+}
+
+nav ul li a:hover{
+	background-color: #784D30;
+}
+
+/*====================================
+  メインビジュアル
+====================================*/
+div#main{
+	width: 1500px;
+	height: 967px;
+	text-align: center;
+	position: relative;
+	margin: 0 auto;
+}
+
+div#main p{
+	font-size: 60px;
+	font-weight: bold;
+	font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "serif";
+	color: #fff;
+	position: absolute;
+	top: 200px;
+	left: 100px;
+}
+
+/*========================
+ 製品について
+========================*/
+div#food_details{
+	text-align: center;
+}
+
+div#food_tittle{
+	width:100%;	
+	height: 120px;
+	background-color: #552b0b;
+	line-height: 1.2;
+}
+
+div#food_details h2{
+	width:260px;
+	font-size: 35px;
+	font-weight: bold;
+	color: #fff;
+	margin: 0 auto;
+	border-bottom: 3px solid #c7ced3;
+	padding-top: 30px;
+}
+
+div#food_details p{
+	font-size: 18px;
+	font-weight: bold;
+	color: #fff;
+}
+
+
+
+/* ==================
+	Contactページ用css
+================== */
+
+ .required-label {
+    background-color: #b40b26;
+    color: white;
+    font-size: 12px;
+    padding: 2px 6px;
+    margin-left: 5px;
+    border-radius: 3px;
+    vertical-align: middle;
+  }
+
+
+ .radio-group {
+    display: flex;
+    flex-direction: column;   
+    align-items: flex-start; 
+    gap: 10px;
+    margin: 10px 0;
+  }
+
+  .radio-group > div {
+    display: flex;
+    align-items: center;  
+    gap: 5px;
+  }
+
+form {
+	width: 900px;
+	background-color: #fff;
+	padding: 30px;
+	margin: 30px auto 60px;
+	text-align: left;
+}
+
+legend {
+	font-size: 22px;
+	font-weight: 900;
+	margin: 0 0 15px 0;
+	color: #B19956;
+}
+
+label {
+	display: block;
+	font-size: 16px;
+	font-weight: 900;
+	margin: 0 0 5px 0;
+	text-align: left;
+}
+
+form input, form textarea,select {
+	padding: 10px;
+	margin: 2px 0 20px;
+	border: 1px solid #EBEBE7;
+	width: 880px;
+	font-size: 13px;
+}
+
+legend{
+	text-align: left;
+}
+
+#personal,#corporation,#verify {
+	float: left;
+	width: 20px;
+	height: 15px;
+	margin: 0 0 5px 0;
+}
+.left {
+	float: left;
+	height: 20px;
+	line-height: 1.3;
+	font-size: 13px;
+	font-weight: 100;
+	margin: 0 15px 0 0;
+}
+
+select {
+	width: 100%;
+}
+
+fieldset {
+	margin: 0 0 30px 0;
+	border: 0;
+	border-bottom: 1px solid #ebebe7;
+	padding: 0 0 30px 0;
+}
+
+optgroup {
+	color: #b4b4b4;
+}
+select option {
+	margin: 0 0 0 15px;
+	color: #000;
+}
+
+button {
+	background-color: #B19956;
+	color: #fff;
+	border: none;
+	width: 400px;
+	padding: 10px 0;
+	
+	border-radius: 6px;
+	font-weight: 900;
+	display: block;
+	margin: 0 auto 20px auto;
+}
+#reset {
+	background-color: #EBEBE7;
+	color: #555;
+}
+button:hover {
+	cursor: pointer;
+	opacity: 0.8;
+}
+
+
+
+textarea[readonly] {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  cursor: default;
+  pointer-events: none; 
+}
+
+
+/*========================
+ フッター
+========================*/
+footer{
+	width:100%;	
+	height: 150px;
+	background-color: #552b0b;
+}
+
+div#footer_inner{
+	width: 1400px;
+	height: 150px;
+	margin: 0 auto;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+div#footer_logo{
+	display: flex;
+	align-items:flex-end;
+}
+
+div#footer_logo p{
+	font-size: 14px;
+	line-height: 1;
+	margin-left: 10px;
+	color: #fff;
+}
+div#footer_logo img{
+	width: 80px;
+	height: 80px;
+}
+
+footer ul{
+	display: flex;
+}
+
+footer ul li{
+	border-left: 1px solid #fff;
+	padding: 0 10px;
+}
+
+footer ul li:first-child{
+	border-left: none;
+}
+
+footer ul li a{
+	font-size: 18px;
+	font-weight: bold;
+	color: #fff;
+}
+div#pagetop{
+	width: 80px;
+	height: 20px;
+	background-color: #c7ced3;
+	text-align: center;
+	position: absolute;
+	top:-20px;
+	right: 0;
+}
+
+
+/*スマートフィン View*/
+
+@media (max-width: 768px) {
+  header {
+    height: auto;
+    padding: 10px 0;
+  }
+
+  #header_inner {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex; 
+  }
+
+  nav ul li {
+    width: 100%;
+  }
+
+  nav ul li a {
+    display: block;
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 16px;
+    text-align: left;
+    border-left: none;
+    border-bottom: 1px solid #fff;
+  }
+
+  footer {
+    height: auto;
+    padding: 20px;
+  }
+
+  #footer_inner {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    display: flex;
+  }
+
+  #footer_logo {
+    margin-bottom: 15px;
+  }
+
+  footer ul {
+    flex-direction: column;
+    gap: 10px;
+    display: flex;
+    padding: 0;
+    margin: 0;
+	align-items: flex-start; 
+    width: 100%;             
+  }
+
+  footer ul li {
+    border: none;
+    padding: 0;
+  }
+
+  #pagetop {
+    position: static;
+    margin-top: 20px;
+  }
+}
+
+
+/*タブレット View*/
+
+@media (min-width: 768px)/*T{
+	
+body{
+     max-width: 778px;
+    }
+	
+	
+@media (max-width: 1024px)
+  nav ul li {
+    width: 100%;
+  }
+  
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+/*====================================
+  フッター
+====================================*/
+footer{
+	width: 100%;
+	height: 150px;
+	background-color: #552b0b;
+	margin-top: 85px;
+}
+
+div#footer_inner{
+	width: 1400px;
+	height: 150px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+}
+
+div#logo{
+	display: flex;
+	align-items: flex-end;
+}
+
+div#logo img{
+	height: 100px;
+}
+
+div#logo p{
+	font-size: 20px;
+	line-height: 1;
+	margin-left: 10px;
+	color: #fff;
+}
+
+footer ul{
+	display: flex;
+}
+
+footer ul li{
+	border-left: 1px solid #fff;
+	padding: 0 10px;
+}
+
+footer ul li:first-child{
+	border-left: none;
+}
+
+footer ul li a{
+	font-size: 18px;
+	font-weight: bold;
+	color: #fff;
+}
+
+footer ul li a:hover{
+	text-decoration: underline 2px solid #fff;
+}
+
+div#pagetop{
+	width: 80px;
+	height: 20px;
+	background-color: #552b0b;
+	text-align: center;
+	position: absolute;
+	top: -20px;
+	right: 0;
+}
+
+div#pagetop p a{
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+	display: block;
+}
+
+
+
+
+
+
+

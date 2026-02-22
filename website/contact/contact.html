@@ -1,0 +1,121 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>黒猫物語</title>
+	<link rel="stylesheet" href="contact.css" media="all">
+	<link rel="icon" href="../images/kuroneko_icon_32x32.png" type="image/png">
+</head>
+
+<body>
+	<!-- ここからヘッダー -->
+	<header>
+		<div id="header_inner">
+			<h1>
+				<img src="../images/kuroneko_logo.png" alt="黒猫物語ロゴ">
+			</h1>
+		</div>
+		<div id="nav">
+			<nav>
+				<ul>
+					<li><a href="#">お店の様子<br><span>overview</span></a></li>
+					<li><a href="#">店舗情報<br><span>information</span></a></li>
+					<li><a href="#">ご利用料金<br><span>charge</span></a></li>
+					<li><a href="#">お知らせ<br><span>news</span></a></li>
+					<li><a href="#">よくある質問<br><span>questions</span></a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<!-- ここまでヘッダー -->
+	<div id="wrapper">
+		<!-- ここからメイン画像 -->
+		<div id="main">
+			<img src="../images/image0.jpg" alt="メイン画像(黒猫物語)">
+			<p></p>
+		</div>
+		<!-- ここまでメイン画像 -->
+		
+		<!--ここから製品について-->
+		<div id="food_details">
+			<div id="food_tittle">
+				<h2>お問い合わせ</h2>
+				<p>Contact</p>
+			</div>
+			   
+		</div>
+		
+	</div>
+	<!--ここまでラッパー-->
+	<!-- ここからフォーム -->
+				<form>
+					<fieldset id="form-lock">
+						<legend>お客様情報</legend>
+						<label for="name">お名前：<span class="required-label">必須</span></label><input id="name" type="text" name="お名前" placeholder="（例）山田　花子">
+						<label for="name2">フリガナ：<span class="required-label">必須</span></label><input id="name2" type="text" name="フリガナ" placeholder="（例）ヤマダ　ハナコ">
+						<label for="tel">電話番号：<span class="required-label">必須</span></label><input id="tel" type="text" name="電話番号" placeholder="（例）012-345-6789 　　※自宅または携帯電話のいずれかご連絡可能な番号をご記入ください">
+						<label for="mail">メールアドレス：<span class="required-label">必須</span></label><input id="mail" type="text" name="メール" placeholder="（例）info@kuronekomonogatari.com">
+						
+					</fieldset>
+					
+					<fieldset>
+						<legend>お問い合せ本文</legend>
+						
+						<label for="category">お問い合せの種類 <span class="required-label">必須</span></label>
+						<select id="category" name="お問い合せの種類">
+							<optgroup>
+							<option value="" disabled selected>詳細内容を選択してください</option>
+								<option>猫ちゃんについて</option>
+								<option>価格について</option>
+								<option>支払方法について</option>
+								<option>店舗について</option>
+								<option>その他、質問等</option>
+							</optgroup>
+						</select>
+						<label for="para">本文：<span class="required-label">必須</span></label><textarea id="para" name="本文" placeholder="お問い合わせ内容など、自由にお書きください" style="height: 200px;"></textarea>
+						
+                      	<label>個人情報保護方針への同意 <span class="required-label">必須</span></label>
+						
+						<div style="display: flex; align-items: center; gap: 8px;">
+						<input id="verify" type="checkbox" name="確認" value="規約に同意します"><br>
+						<label for="verify">個人情報規約に同意します。</label>
+						</div>
+					</fieldset>
+					
+					<input type="submit" value="送信する">
+					<input type="reset" value="初期化する">
+				</form>
+	
+				<script>
+				  window.addEventListener("DOMContentLoaded", () => {
+					const textarea = document.getElementById("para");
+					textarea.disabled = false; // 再び有効にする
+					textarea.removeAttribute("disabled"); // 念のため
+				  });
+				</script>
+	
+	<!-- ここまでフォーム -->
+				
+	<!-- ここからフッター -->
+	<footer>
+		<div id="footer_inner">
+			<div id="logo">
+				<img src="../images/image1.jpeg" alt="ロゴ">
+				<p>〒700-0023<br>岡山市北区駅前町2丁目3-12 4F<br>☎TEL 086-117-9605<br>営業時間 11:00～20:00 / 定休日 水曜日</p>
+			</div>
+			<ul>
+				<li><a href="#">お店の様子</a></li>
+				<li><a href="#">店舗情報</a></li>
+				<li><a href="#">ご利用料金</a></li>	
+				<li><a href="#">お知らせ</a></li>
+				<li><a href="#">よくある質問</a></li>
+			</ul>		
+			<div id="pagetop">
+				<p><a href="#">page top</a></p>
+			</div>
+		</div>
+	</footer>
+	<!-- ここまでフッター -->
+</body>
+</html>
